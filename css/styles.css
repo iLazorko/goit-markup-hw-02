@@ -1,0 +1,141 @@
+/* 
+Колір тексту:
+
+основной колір - темно-сірий - #757575;  (primary-text-color)
+дод.колір-блакитний - #2196F3; (secondary-text-color)
+колір заголовків - чорний  -   #212121; (heading-text-color)
+дод.колір - білий  - #FFFFFF; (white-text-color)
+
+Логотип в header:
+    перший колір-блакитний - #2196F3; (secondary-text-color)
+    другий колір-чорний  - #000000; (black-logo-color)
+
+footer: колір в логотипі - блакитний  - #2196F3; (secondary-text-color)
+        основной колір - білий: #ffffff; (white-text-color)
+        дод. колір - білий прозорий: rgba(255, 255, 255, 0.6); (secondary-white-color)
+
+ФОН:
+
+основний - білий - #ffffff; (primary-bg-color)
+блок Наша команда  - #F5F4FA; (secondary-bg-color)
+footer - темний  - #2F303A; (footer-bg-color)
+
+Кнопка: колір фону - #2196F3; (btn-bg-color)
+        колір тексту  - #ffffff; (white-text-color)
+        колір фону на Портфолио  - #F5F4FA; (secondary-bg-color)
+        додатковий колір тексту  -  #212121;
+     
+*/
+
+
+:root {
+  --primary-text-color: #757575;
+  --heading-text-color: #212121;
+  --secondary-text-color: #2196f3;
+  --white-text-color: #ffffff;
+  --black-logo-color: #000000;
+  --secondary-white-color: rgba(255, 255, 255, 0.6);
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+  --btn-bg-color: #2196f3;
+}
+
+/* ------------HEADER-------------------------------------- */
+body{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+.nav-logo {
+  color: var(--black-logo-color);
+}
+
+.logo {
+  color: var(--secondary-text-color);
+}
+
+.nav-item {
+  color: var(--heading-text-color);
+}
+
+.current,
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--secondary-text-color);
+}
+
+.nav-link {
+  color: var(--primary-text-color);
+} 
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--secondary-text-color);
+}
+
+/*----------- HERO Section --------------------------*/
+
+.hero-title {
+  color: var(--white-text-color);
+  background-color: teal;
+}
+
+.hero-btn {
+  color: var(--white-text-color);
+  background-color: var(--btn-bg-color);
+}
+
+/* ----------- Sections-----------------------*/
+
+.benefits-title {
+  color: var(--heading-text-color);
+}
+
+/* .benefits-text {
+  color: var(--primary-text-color);
+} */
+
+.title,
+.team-title {
+  color: var(--heading-text-color);
+}
+
+.team-section{
+    background-color: var(--secondary-bg-color);
+}
+
+.team-list{
+    background-color: var(--primary-bg-color);
+}
+
+/* ----------Footer----------------------------------- */
+
+.footer{
+    background-color: var(--footer-bg-color);
+}
+
+.footer-logo {
+  color: var(--white-text-color);
+}
+
+.map{
+    color: var(--white-text-color);  
+}
+.contact{
+    color: var(--secondary-white-color);
+}
+
+
+/* --------PORTFOLIO------------------ */
+
+.btn-filter{
+    color: var(--heading-text-color);
+    background-color: var(--secondary-bg-color);
+    cursor: pointer;
+}
+
+.btn-filter:hover,
+.btn-filter:focus{
+    background-color: var(--btn-bg-color);
+    color: var(--white-text-color);
+}
